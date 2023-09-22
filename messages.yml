@@ -1,28 +1,20 @@
-# \u00BB is » (double >>), ANSI and UTF-8 interpret this differently... you may even see ? due to this
-prefix: "&bAntiCheat &8\u00BB"
+prefix: "&8[&bGrim&8] &7>> "
 
 alerts-enabled: "%prefix% &fAlerts enabled"
 alerts-disabled: "%prefix% &fAlerts disabled"
 client-brand-format: "%prefix% &f%player% joined using %brand%"
-console-specify-target: "%prefix% &cYou must specify a target as the console!"
-player-not-found: "%prefix% &cPlayer is exempt or offline!"
-player-not-this-server: "%prefix% &cPlayer is not on this server!"
+console-specify-target: "%prefix% &cYou must specify a target!"
+player-not-found: "%prefix% &cPlayer not found"
+player-not-this-server: "%prefix% &cPlayer not found"
 spectate-return: "\n%prefix% &fClick here to return to previous location\n"
-cannot-spectate-return: "%prefix% &cYou can only do this after spectating a player"
-cannot-run-on-self: "%prefix% &cYou cannot use this command on yourself!"
+cannot-spectate-return: "%prefix% &cYou can only do this while spectating"
+cannot-run-on-self: "%prefix% &cYou cannot use this command on yourself"
 upload-log: "%prefix% &fUploaded debug to: %url%"
-upload-log-start: "%prefix% &fUploading log... please wait"
-upload-log-not-found: "%prefix% &cUnable to find that log"
-upload-log-upload-failure: "%prefix% &cSomething went wrong while uploading this log, see console for more info"
-
-# Valid placeholders:
-# %prefix%
-# %player%
-# %check_name%
-# %vl% - violations
-# %verbose% - extra information from the check such as offsets, not all checks will add information
-alerts-format: "%prefix% &f%player% &bfailed &f%check_name%"
-alerts-format-proxy: "%prefix% &f%player% &bfailed &f%check_name%%"
+upload-log-start: "%prefix% &fUploading log..."
+upload-log-not-found: "%prefix% &cLog not found"
+upload-log-upload-failure: "%prefix% &cFailed to upload log"
+alerts-format: "%prefix% &7%player% &ffailed &b%check_name%"
+alerts-format-proxy: "%prefix% &7%player% &ffailed &b%check_name%%"
 
 profile:
   - "&7======================"
