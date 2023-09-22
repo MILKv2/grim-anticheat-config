@@ -1,32 +1,36 @@
 Punishments:
 
 
-  Simulation:
+  Movement:
     remove-violations-after: 30
     checks:
       - "Simulation"
       - "GroundSpoof"
       - "Timer"
       - "NoFall"
+      - "EntityControl"
+      - "NoSlow"
     commands:
       - "6:4 [alert]"
-      - "42:0 kick %player% Unfair advantage"
 
-  Knockback:
+
+  Velocity:
     remove-violations-after: 30
     checks:
       - "Knockback"
       - "Explosion"
     commands:
       - "1:1 [alert]"
-      - "3:0 kick %player% Unfair advantage"
-  Post:
+
+
+  Scaffold:
     remove-violations-after: 30
     checks:
       - "Post"
+      - "Place"
     commands:
       - "4:2 [alert]"
-      - "12:0 kick %player% Unfair advantage"
+
 
   BadPackets:
     remove-violations-after: 30
@@ -34,8 +38,7 @@ Punishments:
       - "BadPackets"
       - "Crash"
     commands:
-      - "4:2 [alert]"
-      - "12:0 kick %player% Unfair advantage"
+      - "1:1 [alert]"
 
   Reach:
     remove-violations-after: 30
@@ -43,33 +46,20 @@ Punishments:
       - "Reach"
     commands:
       - "2:1 [alert]"
-      - "6:0 kick %player% Unfair advantage"
 
   Misc:
     remove-violations-after: 30
     checks:
-      - "EntityControl"
-      - "NoSlow"
-      - "Place"
       - "Baritone"
       - "FastBreak"
     commands:
       - "4:2 [alert]"
-      - "12:0 kick %player% Unfair advantage"
 
   Combat:
     remove-violations-after: 30
     checks:
       - "Killaura"
       - "Aim"
-    commands:
-      - "4:2 [alert]"
-      - "12:0 kick %player% Unfair advantage"
-
-  Autoclicker:
-    remove-violations-after: 30
-    checks:
       - "Autoclicker"
     commands:
       - "4:2 [alert]"
-      - "12:0 kick %player% Unfair advantage"
